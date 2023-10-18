@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Jokes!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <style>
+    main {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2em;
+    }
+    article {
+      padding: 1em;
+      border: 0.5em solid black;
+    }
+  </style>
+  <body>
+    <header>
+      <h1>A joke! :D</h1>
+    </header>
+    <main>
+      <article>
+        <p>Question: <%= joke.question %></p>
+        <% if(joke.answer){ %>
+        <p>Answer: <%= joke.answer %></p>
+        <% } %>
+        <p>Submitted by: <%= joke.author %></p>
+        <a href="/jokes">Back to all jokes</a>
+      </article>
+    </main>
+  </body>
+</html>

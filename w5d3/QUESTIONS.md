@@ -1,0 +1,4 @@
+# Tasks!
+
+- Nested Queries?
+- Joining ?
