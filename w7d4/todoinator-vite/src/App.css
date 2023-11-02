@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+ul.TaskList {
+  padding: 1em;
+}
+li.TaskListItem {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+li.TaskListItem p:first-of-type {
+  min-width: 50ch;
+}
+li.TaskListItem p {
+  border: 0.2em solid white;
+  padding: 1em;
+}
+li.TaskListItem button {
+  font-size: 1em;
+  padding: 1em;
+}
+
+form.TaskForm {
+  padding: 1em;
+  display: flex;
+  gap: 1em;
+}
+form.TaskForm input,
+form.TaskForm select,
+form.TaskForm button {
+  font-size: 1em;
+  padding: 1em 0.5em;
+}
